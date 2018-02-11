@@ -75,7 +75,7 @@
 <script>
   import { mapState, mapGetters } from 'vuex';
   import showdown from 'showdown';
-  import BMaskedInput from '@/components/BMaskedInput';
+  import BMaskedInput from './BMaskedInput';
   import _ from 'lodash';
 
   const converter = new showdown.Converter({

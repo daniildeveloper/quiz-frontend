@@ -4,7 +4,7 @@
 </template>
 
 <script>
-  import Answers from '@/components/Answers';
+  import Answers from './Answers';
 
   export default {
     components: {

@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Quiz from '@/components/Quiz';
+import Quiz from '../components/Quiz';
 
 Vue.use(Router);
 

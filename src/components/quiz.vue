@@ -63,12 +63,12 @@
 </template>
 
 <script>
-  import Assistant from '@/components/Assistant';
+  import Assistant from './Assistant';
   import { mapState, mapActions, mapGetters } from 'vuex';
-  import Question from '@/components/Question';
-  import LeedForm from '@/components/LeedForm';
-  import Discount from '@/components/Discount';
-  import InputQuestion from '@/components/InputQuestion';
+  import Question from './Question';
+  import LeedForm from './LeedForm';
+  import Discount from './Discount';
+  import InputQuestion from './InputQuestion';
   import _ from 'lodash';
 
   export default {

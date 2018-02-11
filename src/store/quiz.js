@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import uuid from '@/utils/uuid';
+import uuid from '../utils/uuid';
 import ccc from 'ccc';
 import _ from 'lodash';
 import queryString from 'query-string';

@@ -4,7 +4,7 @@ import 'numeral/locales/ru'
 // import moment from 'moment'
 // import 'moment/locale/en-gb'
 // import 'moment/locale/ru'
-import store from '@/store'
+import store from '../store'
 // TODO локали для разных языков
 numeral.locale('ru')
 

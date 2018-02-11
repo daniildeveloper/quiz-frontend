@@ -4,14 +4,14 @@ import 'es6-promise/auto';
 import Vue from 'vue';
 import Buefy from 'buefy';
 import 'buefy/lib/buefy.css';
-import store from '@/store';
+import store from './store';
 
 // Plugins
-import AxiosPlugin from '@/plugins/axios';
-import HorizontalScroll from '@/plugins/horizontalScroll';
-import Analytic from '@/plugins/analytic';
-import I18Next from '@/plugins/i18next';
-import translations from '@/locales';
+import AxiosPlugin from './plugins/axios';
+import HorizontalScroll from './plugins/horizontalScroll';
+// import Analytic from './plugins/analytic';
+import I18Next from './plugins/i18next';
+import translations from './locales';
 
 // Components
 import VueAwesomeSwiper from 'vue-awesome-swiper';
@@ -32,7 +32,7 @@ Vue.use(Buefy);
 Vue.use(AxiosPlugin);
 Vue.use(Dragscroll);
 Vue.use(HorizontalScroll);
-Vue.use(Analytic, {});
+// Vue.use(Analytic, {});
 Vue.use(I18Next, { translations, lang: store.state.lang });
 Vue.use(VueAwesomeSwiper);
 

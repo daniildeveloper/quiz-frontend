@@ -20,7 +20,7 @@
 
 <script>
   import { mapState, mapGetters } from 'vuex';
-  import avatar from '@/assets/artem.jpg';
+  import avatar from '../assets/artem.jpg';
   import showdown from 'showdown';
 
   const converter = new showdown.Converter({

@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <Layout>
+    <!-- <Layout> -->
       <Quiz v-if="loaded"/>
-    </Layout>
+    <!-- </Layout> -->
     <b-loading :active.sync="isLoading" :canCancel="true"></b-loading>
   </div>
 </template>
 
 <script>
-  import Layout from '@/components/Layout';
-  import Quiz from '@/components/Quiz';
+  // import Layout from './components/Layout';
+  import Quiz from './components/Quiz';
   import { mapState } from 'vuex';
 
   export default {
@@ -26,8 +26,7 @@
     computed: {
       ...mapState('quiz', ['loaded']),
     },
-    components: {
-      Layout, Quiz,
+    components: { Quiz,
     },
     name: 'app',
   };

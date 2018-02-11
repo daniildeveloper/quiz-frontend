@@ -39,8 +39,8 @@
 </template>
 
 <script>
-  import Answer from '@/components/Answer';
-  import CheckboxRadioGroup from '@/components/CheckboxRadioGroup';
+  import Answer from './Answer';
+  import CheckboxRadioGroup from './CheckboxRadioGroup';
   import _ from 'lodash';
   import { mapActions } from 'vuex';
 

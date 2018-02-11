@@ -11,8 +11,3 @@
     props: ['select', 'value'],
   };
 </script>
-
-
-
-// WEBPACK FOOTER //
-// src/components/CheckboxRadioGroup.vue
