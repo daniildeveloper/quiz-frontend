@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <Layout>
+      <Quiz v-if="loaded"/>
+    </Layout>
+    <b-loading :active.sync="isLoading" :canCancel="true"></b-loading>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+  import Layout from '@/components/Layout';
+  import Quiz from '@/components/Quiz';
+  import { mapState } from 'vuex';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  export default {
+    beforeMount() {
+      this.$store.dispatch('quiz/get', this.$route.params.id).then(() => {
+        this.isLoading = false;
+      });
+    },
+    data() {
+      return {
+        isLoading: true,
+      };
+    },
+    computed: {
+      ...mapState('quiz', ['loaded']),
+    },
+    components: {
+      Layout, Quiz,
+    },
+    name: 'app',
+  };
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="@/app.less" lang="less"></style>
+
+
+
+// WEBPACK FOOTER //
+// src/App.vue
