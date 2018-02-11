@@ -32,8 +32,6 @@
   };
 </script>
 
-<style src="@/app.less" lang="less"></style>
-
 
 
 // WEBPACK FOOTER //

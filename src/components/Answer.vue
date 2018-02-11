@@ -42,37 +42,7 @@
   };
 </script>
 
-<style lang="less">
-  @import '../variables.less';
-
-  .answer_type_image {
-    max-width: 180px;
-    .answer {
-      text-align: center;
-      width: 100%;
-      margin: 0;
-    }
-
-    .answer__title {
-      text-align: center;
-      margin-top: 20px;
-    }
-  }
-
-  .answer_checked {
-    color: var(--color-text2);
-  }
-
-  .answer {
-    &__img {
-      opacity: 1;
-      transition: opacity 150ms;
-      &_loading {
-        display: none;
-        opacity: 0;
-      }
-    }
-  }
+<style>
 </style>
 
 

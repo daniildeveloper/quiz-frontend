@@ -63,47 +63,8 @@
   };
 </script>
 
-<style lang="less">
-  .assistant {
-    font-size: 0.9rem;
-    width: 100%;
-    padding: 23px 26px;
-    @media (max-width: 767px) {
-      padding: 30px 26px;
-      min-height: 300px;
-    }
-  }
+<style >
 
-  .assistant__title {
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 1.1rem;
-    margin-bottom: 0;
-  }
-
-  .assistant__status {
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    border-radius: 2.5px;
-    background-color: #03a646;
-    margin-right: 7px;
-    margin-bottom: 1px;
-  }
-
-  .assistant__subtitle {
-    font-size: 12px;
-    color: #969696;
-    margin-bottom: 0;
-    margin-top: -1.4rem;
-  }
-
-  .assistant__avatar img {
-    width: 70px;
-    height: 70px;
-    border-radius: 35px;
-    box-shadow: 5px 4px 17px 0px rgba(0, 0, 0, 0.16);
-  }
 </style>
 
 
